@@ -1,0 +1,207 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Calibri;}{\f6\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f7\fnil\fprq2\fcharset0 Arial;}{\f8\fswiss\fprq0\fcharset128 Arial;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052 Normal;}
+{\s15\sbasedon0\snext16\rtlch\af7\afs28 \ltrch\hich\af4\loch\sb240\sa120\keepn\f4\fs28\dbch\af6 Heading;}
+{\s16\sbasedon0\snext16\loch\sl276\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\rtlch\af8 \ltrch\loch\sl276\slmult1\sb0\sa140 List;}
+{\s18\sbasedon0\snext18\rtlch\af8\afs24\ai \ltrch\loch\sb120\sa120\noline\fs24\i Caption;}
+{\s19\sbasedon0\snext19\rtlch\af8 \ltrch\loch\noline Index;}
+}{\*\generator LibreOffice/7.1.7.2$Windows_X86_64 LibreOffice_project/c6a4e3954236145e2acb0b65f68614365aeee33f}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr2021\mo12\dy7\hr17\min45}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab720
+\hyphauto1\viewscale90
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Page Style;}}
+\formshade\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\pgndec\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+create table xxtable(id int,xname varchar(20));}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+create table yytable(id int,xname varchar(20));}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+1.Inner Join:}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select xname,xxtable.id,yytable.id,yname from xxtable inner join yytable on xxtable.id=yytable.id;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+2.Cross Join:}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select * from xxtable cross join yytable;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+3.Left Outer Join:}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select * from xxtable left outer join yytable on xxtable.id =yytable.id;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+4.Right Outer Join:}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select * from xxtable right outer join yytable on xxtable.id =yytable.id;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+5.Self Join:}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select c1.fname,c2.fname,c1.city from customer as c1,customer as c2 where c1.city=c2.city;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+Problem#1 }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+display customer name,customer id who have issued max and min no.of movies }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select cm.customer_name, cm.customer_id }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+from CUSTOMER_MASTER cm join CUSTOMER_ISSUE_DETAILS cid }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on cm.customer_id =cid.customer_id }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+group by cm.customer_id having }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+  }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+        }{\hich\af5\loch\fs22\lang9\f5\loch
+count(cid.movie_id) in (select max(t.top) as Count_Movie from (select count(movie_id) as top from }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+        }{\hich\af5\loch\fs22\lang9\f5\loch
+CUSTOMER_MASTER cm join CUSTOMER_ISSUE_DETAILS cid }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+        }{\hich\af5\loch\fs22\lang9\f5\loch
+on cm.customer_id =cid.customer_id group by cm.customer_id) as t) ;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+Problem #2 display id,name,mobile num and description of all customers.if mobile num is not available then display address as alias contact,for those who does't have library cards display null as description}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+ }{\hich\af5\loch\fs22\lang9\f5\loch
+select cm.customer_id, cm.customer_name, cm.contact_no,}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+cast(coalesce(cm.contact_no, cm.contact_add) as char) as contact_alias,}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+ifnull(lcm.description,null) as description    }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+from}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+CUSTOMER_MASTER cm left join CUSTOMER_CARD_DETAILS ccd }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on cm.customer_id=ccd.customer_id }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+left join LIBRARY_CARD_MASTER lcm }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on ccd.card_id=lcm.card_id;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+ }{\hich\af5\loch\fs22\lang9\f5\loch
+Problem #3 display customer details and movie id for those who issued same movie more than one time OR //dislay customer details who watched same movie more than once }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select cm.customer_id, cm.customer_name, cid.movie_id, count(cid.movie_id) as Movie_Count}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+from CUSTOMER_MASTER cm join CUSTOMER_ISSUE_DETAILS cid}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on cm.customer_id = cid.customer_id}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+group by cid.movie_id, cm.customer_id}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+having count(movie_id)>1;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+Problem #4 display customer information those who has library cards }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+          }{\hich\af5\loch\fs22\lang9\f5\loch
+select cm.customer_id, cm.customer_name from }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+CUSTOMER_CARD_DETAILS ccd join CUSTOMER_MASTER  cm join LIBRARY_CARD_MASTER lcm}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on cm.customer_id=ccd.customer_id and ccd.card_id=lcm.card_id;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+Problem #5 display the members who watch the movie but doesnt have card }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+select cm.customer_id, cm.customer_name from }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+CUSTOMER_MASTER cm join CUSTOMER_ISSUE_DETAILS  cid}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on cm.customer_id=cid.customer_id}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+where cm.customer_id not in }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+        }{\hich\af5\loch\fs22\lang9\f5\loch
+(select customer_id from CUSTOMER_CARD_DETAILS);}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+Prblem #6 display sr no as 2 digits of issue id,emp id,movie watched,video id and sort by sr no }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+ }{\hich\af5\loch\fs22\lang9\f5\loch
+select substring(cid.issue_id,4) as Sr_No, cm.customer_name,}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+cm.customer_id, cid.issue_id as video_id, mm.movie_id, mm.movie_name }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+from CUSTOMER_ISSUE_DETAILS cid join CUSTOMER_MASTER cm join MOVIES_MASTER mm}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on cm.customer_id=cid.customer_id and cid.movie_id=mm.movie_id}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+order by Sr_no;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+Problem #7 display total revenue spent on videos by each custome}{\hich\af5\loch\fs22\lang9\f5\loch
+r}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+select cm.customer_id, cm.customer_name,}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+ifnull((count(cid.issue_id)*mm.rent_cost),0) from }
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+CUSTOMER_MASTERcm left join CUSTOMER_ISSUE_DETAILS  cid}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on cid.customer_id=cm.customer_id}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+left join MOVIES_MASTER mm}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+         }{\hich\af5\loch\fs22\lang9\f5\loch
+on mm.movie_id = cid.movie_id}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5\loch
+group by cm.customer_id}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar{\hich\af5\loch\fs22\lang9\f5
+        }{\hich\af5\loch\fs22\lang9\f5\loch
+order by cm.customer_id;}
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\hich\af5\loch\fs22\lang9\f5\loch
+
+\par \pard\plain \s0\rtlch\af7\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\loch\sl276\slmult1\ql\sb0\sa200\ltrpar\loch
+
+\par }
